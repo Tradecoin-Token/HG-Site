@@ -1,0 +1,16 @@
+@import 'base.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 32px;
+
+    @media(max-width: $mobileWidth) {
+        width: 100%;
+        margin: 16px 0px;
+    }
+
+    background-color: #1E0E62;
+}

@@ -1,0 +1,184 @@
+@import 'base.scss';
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+
+    padding: 24px 32px;
+
+    @media(max-width: $mobileWidth) {
+        padding: 16px 0px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @media(max-width: $mobileWidth) {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 32px;
+
+            letter-spacing: 0.15px;
+            color: #000000;
+
+
+            @media(max-width: $mobileWidth) {
+                padding: 16px 0px;
+            }
+
+            .normal {
+                background: inherit;
+            }
+
+            .bright {
+                background: linear-gradient(180deg, #000451 0.11%, #FF0752 79.28%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 32px;
+            padding: 0px;
+
+            @media(max-width: $mobileWidth) {
+                gap: 0px;
+                justify-content: space-evenly;
+            }
+
+            .menuItem {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+
+                letter-spacing: 0.5px;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+                .active {
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: #FF0752;
+                }
+
+                .normal {
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+
+    }
+
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        min-width: 600px;
+        max-width: 40%;
+        margin: 64px 0px;
+
+        @media(max-width: $mobileWidth) {
+            min-width: 0px;
+            max-width: 90%;
+            margin: 32px 0px;
+        }
+
+        .introHeader {
+            font-weight: 600;
+            font-size: 61px;
+            line-height: 71px;
+
+            letter-spacing: -0.5px;
+            color: #000000;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            .token {
+                color: #FE006C;
+            }
+
+            @media(max-width: $mobileWidth) {
+                font-size: 20px;
+            }
+        }
+
+        .introText {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            /* or 162% */
+
+            text-align: center;
+            letter-spacing: 0.15px;
+
+            color: #000000;
+        }
+
+        .tokenContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 32px;
+            margin-top: 64px;
+
+            @media(max-width: $mobileWidth) {
+                margin-top: 32px;
+            }
+
+            .tokenImg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .tokenName {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                /* identical to box height, or 161% */
+
+                letter-spacing: 0.5px;
+
+                color: #000000;
+            }
+        }
+    }
+}

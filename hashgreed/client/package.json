@@ -1,0 +1,80 @@
+{
+  "name": "hashgreed-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^1.1.2",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@waves.exchange/provider-cloud": "^1.0.2",
+    "@waves.exchange/provider-web": "^1.0.2",
+    "@waves.exchange/react-uikit": "^0.8.6",
+    "@waves/provider-seed": "^0.1.1",
+    "@waves/signer": "^1.0.2",
+    "@waves/ts-lib-crypto": "^1.4.3",
+    "@waves/waves-transactions": "^4.1.8",
+    "axios": "^0.21.1",
+    "bitcoinjs-lib": "^6.0.1",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^3.1.4",
+    "jquery": "^3.6.0",
+    "js-sha256": "^0.9.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.3",
+    "multicoin-address-validator": "^0.4.16",
+    "node-sass": "^4.14.1",
+    "pdf-creator-node": "^1.4.2",
+    "qrcode.react": "^1.0.1",
+    "query-string": "^6.13.8",
+    "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^11.2.4",
+    "react-icons": "^4.1.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^7.2.2",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-slick": "^0.28.1",
+    "redux": "^4.0.5",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^0.2.4",
+    "web3": "^1.3.1",
+    "yarn": "^1.22.10"
+  },
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.2.2",
+    "react-alice-carousel": "^2.5.1"
+  }
+}

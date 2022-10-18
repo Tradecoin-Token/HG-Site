@@ -1,0 +1,84 @@
+@import 'base.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background: white;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin: 48px 0px;
+
+        @media(max-width: $mobileWidth) {
+            margin: 16px 0px;
+        }
+
+        .logoImg {
+            height: 50px;
+            width: auto;
+        }
+
+        .title {
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 48px;
+        gap: 16px;
+
+        @media(max-width: $mobileWidth) {
+            flex-direction: column-reverse;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #0F0F0F;
+
+            @media(max-width: $mobileWidth) {
+                justify-content: space-evenly;
+            }
+
+            .divider {
+                padding: 0px 48px;
+                color: #616161;
+
+                @media(max-width: $mobileWidth) {
+                    display: none;
+                }
+            }
+
+            .active {
+                font-weight: 700;
+            }
+        }
+
+        .comment {
+            margin: 32px 15%;
+
+            @media(max-width: $mobileWidth) {
+                margin: 16px 32px;
+                font-size: 12px;
+            }
+        }
+    }
+
+
+}

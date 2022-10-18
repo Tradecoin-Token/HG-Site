@@ -1,0 +1,185 @@
+@import 'base.scss';
+
+.emailCertification {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: $mobileWidth) {
+        flex-direction: column;
+    }
+
+    .fileIcon {
+        color: #FE006C;
+        width: 32px;
+        height: 32px;
+
+        @media (max-width:$mobileWidth) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .dataArea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media (max-width: $mobileWidth) {
+            margin-right: 0;
+        }
+
+        .timestampArea {
+            display: flex;
+            flex-direction: row;
+
+            .info {
+                flex: 8;
+                align-items: flex-start;
+                text-align: left;
+                margin-left: 30px;
+                color: #000451;
+                font-size: 15px;
+                font-weight: 500;
+                word-break: break-all;
+
+                @media (max-width:$mobileWidth) {
+                    flex: 6;
+                    margin-right: 0;
+                    margin-left: 0;
+                    font-size: 12px;
+                }
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                @media(max-width: $mobileWidth) {
+                    display: none;
+                }
+
+                .action {
+                    color: #FE006C;
+                    margin-left: 30px;
+                    cursor: pointer;
+
+                    @media (max-width:600px) {
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .references {
+            align-items: flex-start;
+            text-align: left;
+            margin-left: 30px;
+            color: #000451;
+            font-size: 15px;
+            font-weight: 500;
+            word-break: break-all;
+
+            @media (max-width:$mobileWidth) {
+                font-size: 12px;
+                margin-left: 0;
+                display: none;
+            }
+        }
+
+        .mobreferences {
+            align-items: flex-start;
+            text-align: left;
+            margin-left: 30px;
+            color: #000451;
+            font-size: 15px;
+            font-weight: 500;
+            word-break: break-all;
+            display: none;
+
+            @media (max-width:$mobileWidth) {
+                font-size: 12px;
+                margin-left: 0;
+                display: block;
+            }
+
+            @media (max-width: 350px) {
+                display: none;
+            }
+
+            .action {
+                color: #FE006C;
+                margin-left: 10px;
+                cursor: pointer;
+
+                @media (max-width:600px) {
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+        }
+
+        .semimobreferences {
+            align-items: flex-start;
+            text-align: left;
+            margin-left: 30px;
+            color: #000451;
+            font-size: 15px;
+            font-weight: 500;
+            word-break: break-all;
+            display: none;
+
+            @media (max-width:$mobileWidth) {
+                font-size: 12px;
+                margin-left: 0;
+                display: none;
+            }
+
+            @media(max-width:350px) {
+                display: block;
+            }
+
+            .action {
+                color: #FE006C;
+                margin-left: 10px;
+                cursor: pointer;
+
+                @media (max-width:600px) {
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+        }
+
+        .mobActions {
+            display: none;
+
+            @media(max-width: $mobileWidth) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .action {
+                color: #FE006C;
+                cursor: pointer;
+
+                @media (max-width:600px) {
+                    margin-left: 0;
+                    margin-right: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+}

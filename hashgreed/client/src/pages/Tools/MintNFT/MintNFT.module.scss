@@ -1,0 +1,335 @@
+@import 'base.scss';
+
+.nftMintContainer {
+    background: #1E0E62;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 0px !important;
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @media(max-width: $mobileWidth) {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .images {
+            margin-right: 3%;
+
+            @media(max-width: $mobileWidth) {
+                max-width: 80%;
+                margin-top: 32px;
+                margin-right: 11%;
+            }
+
+            .puzzle1 {
+                z-index: 10;
+
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 16px;
+                width: 30%;
+
+                @media(max-width: $mobileWidth) {
+                    width: 40%;
+                }
+            }
+
+            .people {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                gap: 8px;
+                z-index: 10;
+
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    z-index: 10;
+                    gap: 16px;
+                }
+
+                .black1 {
+                    position: absolute;
+                    width: 95%;
+                    height: 100%;
+                    margin-top: 20px;
+                    background-color: black;
+
+                    @media(max-width: $mobileWidth) {
+                        width: 70%;
+                        margin-top: 0px;
+                    }
+                }
+
+                .black2 {
+                    position: absolute;
+                    display: block;
+                    width: 500px;
+                    height: 100%;
+                    margin-top: 20px;
+                    background-color: black;
+
+                    @media(max-width: $mobileWidth) {
+                        display: none;
+                    }
+                }
+            }
+
+            .puzzle2_container {
+                position: relative;
+                width: 95%;
+                height: 15vw;
+                // background-color: black;
+
+                @media(max-width: $mobileWidth) {
+                    width: 70%;
+                    height: 15vh;
+                }
+
+                .puzzle2 {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 40%;
+                    // --tw-translate-y: 50%;
+                    // transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                    width: 30%;
+
+                    @media(max-width: $mobileWidth) {
+                        width: 45%;
+                        left: 0px;
+                    }
+                }
+
+                .bg_black {
+                    position: absolute;
+                    display: block;
+                    width: 500px;
+                    height: 15vh;
+                    background-color: black;
+
+                    @media(max-width: $mobileWidth) {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .puzzle3 {
+                position: absolute;
+                top: -4%;
+                right: -8%;
+                width: 30%;
+
+                @media(max-width: $mobileWidth) {
+                    top: 0px;
+                    right: 0px;
+                }
+            }
+
+            .formContainer {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 13px;
+                padding-bottom: 16px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 10vh;
+                margin-bottom: 32px;
+                z-index: 10;
+
+                @media(max-width: $mobileWidth) {
+                    width: 90%;
+                    margin: 32px auto;
+                }
+
+                .formHeader {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 40px;
+                    line-height: 55px;
+                    text-align: center;
+
+                    color: #1E0E62;
+                    overflow-wrap: break-word;
+                    padding: 0px 32px;
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+
+                    @media(max-width: $mobileWidth) {
+                        padding: 0px 16px;
+                        margin-top: 16px;
+                    }
+                }
+
+                .formContent {
+                    padding: 8px 48px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    @media(max-width: $mobileWidth) {
+                        padding: 8px 32px;
+                    }
+
+                    .field {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        text-align: left;
+
+                        font-family: 'Open Sans';
+                        font-style: normal;
+
+                        .fieldName {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #1D3125;
+                        }
+
+                        .inputContainer {
+                            background: rgba(22, 22, 22, 0.07);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 10px;
+
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: #838383;
+                        }
+
+                        .comment {
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 18px;
+
+                            color: #484848;
+                        }
+
+                        .counter {
+                            background: rgba(22, 22, 22, 0.07);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 10px;
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-size: 25px;
+
+                            padding: 4px 8px;
+
+                            .decCounter {
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-size: 25px;
+
+                                font-weight: 700;
+                                color: #7A008D;
+                            }
+
+                            .incCounter {
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-size: 25px;
+
+                                font-weight: 700;
+                                color: #008D39;
+                            }
+
+                            .counterContainer {
+                                background: #FFFFFF;
+                                border: 1px solid #CBCBCB;
+                                border-radius: 8px;
+                                margin: 4px;
+                                text-align: center;
+                            }
+
+                        }
+
+                    }
+
+                    .note {
+                        text-align: left;
+                        max-width: 400px;
+                        width: 100%;
+
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+
+                        color: #484848;
+
+                    }
+
+
+                    .button {
+                        background: #FE006C;
+                        border-radius: 10px;
+
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+
+                        color: #FFFFFF;
+                        margin: 16px 0;
+                    }
+                }
+            }
+
+            .puzzle4 {
+                position: absolute;
+                bottom: -5%;
+                left: 30%;
+                width: 35%;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0px;
+
+        .footerText {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

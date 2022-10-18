@@ -1,0 +1,164 @@
+@import 'base.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    width: 80%;
+    margin: 32px auto;
+
+    @media(max-width: $mobileWidth) {
+        width: 95%;
+    }
+
+    .heading {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        /* identical to box height, or 101% */
+
+        letter-spacing: 0.15px;
+
+        color: #000000;
+    }
+
+    .token {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        width: 80%;
+        max-width: 1000px;
+
+        padding: 35px 20px;
+
+        background: #F4F4F4;
+        border-radius: 10px;
+
+        @media(max-width: $mobileWidth) {
+            width: 100%;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            gap: 12px;
+
+            .name {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+
+                color: #000000;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+
+            .valueContainer {
+                display: flex;
+                flex-direction: row;
+                gap: "8px";
+                align-items: center;
+                justify-content: flex-start;
+                flex-grow: 1;
+                width: 100%;
+
+                border: 1px solid #707070;
+                border-radius: 5px;
+                padding: 16px 24px;
+
+                .value {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    color: #707070;
+
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+            }
+
+
+        }
+
+        .button {
+            width: 160px;
+            padding: 16px;
+            border-radius: 30px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+        }
+    }
+
+    .withdrawInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        padding: 16px 24px;
+        gap: 40px;
+
+        background: #F4F4F4;
+        border-radius: 10px;
+
+        @media(max-width: $mobileWidth) {
+            width: 100%;
+        }
+
+        .infoItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 8px 16px;
+            gap: 10px;
+
+            border-bottom: 1px solid #707070;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 16px;
+            color: #000000;
+
+            .name {
+                font-weight: 600;
+            }
+
+            .value {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .info {
+        margin-top: 128px;
+        width: 100%;
+    }
+}

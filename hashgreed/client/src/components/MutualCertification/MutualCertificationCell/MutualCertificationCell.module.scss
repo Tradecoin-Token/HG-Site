@@ -1,0 +1,187 @@
+@import 'base.scss';
+
+.mutualCertification{
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  width: 100%;
+  @media (max-width:600px){
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  .infomob{
+    @media (min-width:600px){
+      display: none;
+    }
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .fileIcon{
+    width: 32px;
+    height: 32px;
+  }
+  .dataArea{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (max-width:600px){
+      flex-direction: column-reverse;
+    }
+    .timestampArea{
+        display: flex;
+        flex-direction: row;
+        @media (max-width:600px){
+          flex-direction: column;
+        }
+        .info{
+            flex: 8;
+            align-items: flex-start;
+            text-align: left;
+            margin-left: 30px;
+            margin-right: 300px;
+            color: #000451;
+            font-size: 15px;
+            font-weight: 500;
+            @media (max-width:1000px){
+                margin-right: 100px;
+            }
+            @media (max-width:900px){
+                word-break: break-all;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            @media (max-width:600px){
+              display: none;
+            }
+            @media (max-width:360px){
+                font-size: 11px;
+            }
+        }
+        .actions{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            @media (max-width:600px){
+              margin-top: 20px;
+              justify-content: flex-start;
+              margin-left: 5px;
+            }
+            .action{
+              color: #FE006C;
+              margin-left: 20px;
+              @media (max-width:600px){
+                font-size: 17px;
+                margin-left: 0px;
+                margin-right: 20px;
+              }
+          }
+        }
+    }
+    .references{
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 300px;
+        color: #000451;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+        @media (max-width:1000px){
+            margin-right: 100px;
+        }
+        @media (max-width:900px){
+            word-break: break-all;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        @media (max-width:600px){
+            display: none;
+        }
+        @media (max-width:360px){
+            font-size: 11px;
+        }
+    }
+    .referencesmob{
+      align-items: flex-start;
+      text-align: left;
+      color: #000451;
+      margin-left: 5px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      width: 100%;
+      .tmob{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .action{
+          color: #FE006C;
+          margin-right: 15px ;
+          cursor: pointer;
+          @media (max-width:600px){
+            justify-content: flex-end;
+            align-items: center;
+          }
+      }
+      }
+      @media (min-width:600px){
+          display: none;  
+         
+      }
+  }   
+  }
+}
+.message {
+  margin-top: 5px;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  &>div {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .signLink {
+    margin-bottom: 10px;
+  }
+  .counterparts_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .counterparts {
+    &>div {
+      width: 50%;
+      display: inline-block;
+      margin: 5px 0;
+    }
+    .signStatus {
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    .signed {
+      background-color: #3ead1a;
+      color: white;
+    }
+    .sign {
+      background-color: #D359A6;
+      color: white;
+      font-weight: bold;
+    }
+    .pending {
+      background-color: #ccc;
+    }
+  }
+}

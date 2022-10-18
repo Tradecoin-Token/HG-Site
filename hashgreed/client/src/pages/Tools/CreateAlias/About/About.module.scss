@@ -1,0 +1,92 @@
+@import "base.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin: 64px 80px;
+
+    @media (max-width: $mobileWidth) {
+      flex-direction: column;
+      gap: 40px;
+      margin: 32px 16px;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 50%;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+
+      @media (max-width: $mobileWidth) {
+        width: 100%;
+        gap: 40px;
+      }
+
+      .heading {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 57px;
+        letter-spacing: 0.25px;
+        color: #000000;
+
+        @media (max-width: $mobileWidth) {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      .content {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.15px;
+        color: #000000;
+        max-width: 480px;
+
+        @media (max-width: $mobileWidth) {
+          font-size: 13px;
+          line-height: 21px;
+          letter-spacing: 0.25px;
+        }
+      }
+
+      .createButton {
+        background: #fe006c;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.15px;
+        color: #ffffff;
+        width: 192px;
+        height: 50px;
+      }
+    }
+    .logo {
+      width: 50%;
+      height: auto;
+      @media (max-width: $mobileWidth) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .fee {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    margin-top: 96px;
+  }
+}

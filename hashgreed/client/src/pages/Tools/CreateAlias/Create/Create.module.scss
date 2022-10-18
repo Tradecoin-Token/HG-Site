@@ -1,0 +1,149 @@
+@import "base.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  max-width: 1200px;
+  margin: 32px auto;
+
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #000000;
+
+  @media (max-width: $mobileWidth) {
+    flex-direction: column-reverse;
+    padding: 32px 20px;
+    gap: 32px;
+  }
+
+  .create {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+
+    padding: 80px 64px;
+
+    @media (max-width: $mobileWidth) {
+      width: 100%;
+      padding: 0px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.15px;
+      text-align: center;
+      @media (max-width: $mobileWidth) {
+        text-align: left;
+      }
+    }
+
+    .heading {
+      margin-top: 80px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      @media (max-width: $mobileWidth) {
+        margin-top: 40px;
+      }
+    }
+
+    .noAlias {
+      font-weight: 500;
+    }
+
+    .address {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 8px;
+      padding: 8px 0px;
+
+      .copyIcon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .divider {
+      width: 100%;
+      border: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .input {
+      background: #fafafa;
+      box-shadow: 0px 2px 4px rgba(0, 4, 81, 0.06);
+      border: 1px solid;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      margin-top: 16px;
+
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      color: #000000;
+      opacity: 0.6;
+    }
+
+    .comment {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .button {
+      margin-top: 120px;
+      width: 356px;
+      height: 50px;
+
+      background: #fe006c;
+      color: white;
+      border-radius: 20px;
+
+      @media (max-width: $mobileWidth) {
+        margin-top: 60px;
+        width: 100%;
+      }
+    }
+  }
+  .logo {
+    width: 50%;
+    height: auto;
+    background: rgba(0, 4, 81, 0.4);
+    padding: 48px;
+    @media (max-width: $mobileWidth) {
+      width: 100%;
+      padding: 0px;
+      background: transparent;
+    }
+  }
+  .fee {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+
+    @media (max-width: $mobileWidth) {
+      bottom: -16px;
+    }
+  }
+}

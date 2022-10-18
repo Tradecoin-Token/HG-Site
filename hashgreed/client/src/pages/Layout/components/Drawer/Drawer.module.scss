@@ -1,0 +1,127 @@
+@import 'base.scss';
+
+
+.routes {
+  margin-top: 40px;
+
+  .link {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .hr {
+    margin-right: 20px;
+  }
+
+  .submenu {
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 4, 81, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(3px);
+
+    .subitem {
+      padding: 10px 15px;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+
+      &:not(:first-child) {
+        border-top: 1px solid #FFFFFF55;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #FFFFFF55;
+      }
+
+      .subcomment {
+        width: 90px;
+        height: 26px;
+        background-color: #FE006C;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 10px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .auctionContent {
+      width: 250px;
+      backdrop-filter: blur(5px);
+      margin-left: 60px;
+    }
+  }
+
+  .subnavs {
+    cursor: pointer;
+    margin: 5px 0;
+
+    &>div {
+      padding: 0 10px;
+    }
+
+    .link {
+      border-bottom: 0px;
+    }
+  }
+
+  .sublink {
+    cursor: pointer;
+    margin: 5px 0;
+  }
+
+  .opennav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .closenav {
+    display: none;
+  }
+
+}
+
+.translate {
+  font-weight: 400;
+  color: #C8C6C7;
+}
+
+.balances {
+  margin-top: 15px;
+  margin-bottom: 32px;
+  font-size: 14px;
+
+  .balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 8px;
+    }
+  }
+}

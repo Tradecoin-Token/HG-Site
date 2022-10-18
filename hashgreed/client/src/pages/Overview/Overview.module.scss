@@ -1,0 +1,117 @@
+@import 'base.scss';
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10px;
+
+  @media (max-width: 600px) {
+    padding-top: 30px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    @media(max-width: $mobileWidth) {
+      flex-direction: column-reverse;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .addressList {
+      display: none;
+
+      @media(max-width: $mobileWidth) {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        gap: 16px;
+        width: 100%;
+      }
+    }
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    justify-content: center;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .overviewHeader {
+    font-size: 58px;
+    font-weight: 700;
+    color: #1E0E62;
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+      letter-spacing: -1px
+    }
+  }
+
+  .overviewBody {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    color: #15143966;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media (max-width: $mobileWidth) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    .button {
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 100%;
+
+      @media (max-width: $mobileWidth) {
+        width: 70%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .transactionList {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 20px);
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

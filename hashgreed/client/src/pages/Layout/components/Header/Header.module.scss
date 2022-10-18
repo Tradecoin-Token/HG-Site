@@ -1,0 +1,120 @@
+@import 'base.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  @media (max-width: 600px) {
+    padding: 20px 20px;
+  }
+
+  &>* {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image {
+    width: 370px;
+
+    .drawer {
+      margin-right: 15px;
+      cursor: pointer;
+      display: none;
+
+      @media (max-width: $drawOpenMaxWidth) {
+        display: block;
+      }
+
+      @media (max-width: 600px) {
+        display: none;
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $drawOpenMaxWidth) {
+      width: initial;
+    }
+  }
+
+  .drawer {
+    margin-right: 15px;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 600px) {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
+  .about {
+    font-size: 16px;
+    font-weight: 500;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      color: #15143966;
+
+    }
+
+    &>* {
+      margin: 0 20px;
+    }
+
+    @media (max-width: $drawOpenMaxWidth) {
+      display: none;
+    }
+  }
+
+  .menu {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+
+    @media (max-width: $drawOpenMaxWidth) {
+      width: 400px;
+    }
+
+    &>* {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+
+    .explorer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+      // width: 400px;
+      color: #FE006C;
+      cursor: pointer;
+    }
+
+    .account {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .lang {
+      font-weight: 400;
+      color: #C8C6C7;
+      margin-left: 5px;
+    }
+  }
+}

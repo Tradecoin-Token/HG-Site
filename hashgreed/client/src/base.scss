@@ -1,0 +1,55 @@
+$drawOpenMaxWidth: 1150px;
+$mobileWidth: 600px;
+$primary: white;
+
+.filled {
+  background: #FE006C;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.outline {
+  border: 2px solid #FE006C;
+  color: #000451;
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.disabled {
+  background: #BFBFBF;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: no-drop;
+}
+
+.inputTitle {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #686868;
+  margin-bottom: 30px;
+
+  @media(max-width: $mobileWidth) {
+    font-size: 12px;
+    color: #868B95;
+    margin-bottom: 5px;
+  }
+}
+
+.inputValue {
+  font-size: 26px;
+  font-weight: 700;
+  color: #262626;
+  width: 100%;
+  margin-right: 20px;
+
+  @media(max-width: $mobileWidth) {
+    font-size: 15px;
+    color: #868B95;
+  }
+}

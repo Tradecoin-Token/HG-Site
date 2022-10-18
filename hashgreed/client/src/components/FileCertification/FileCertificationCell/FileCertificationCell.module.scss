@@ -1,0 +1,313 @@
+@import 'base.scss';
+
+.fileCertification {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+
+  .iconArea {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:$mobileWidth) {
+      display: none;
+    }
+
+    .RKMTIcon {
+      width: 32px;
+      height: 32px;
+
+      @media (max-width:1000px) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .dataArea {
+    flex: 9;
+    max-width: 800;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+
+    .timestampArea {
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width:$mobileWidth) {
+        flex-direction: column;
+      }
+
+      .info {
+        flex: 8;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 300px;
+        color: #000451;
+        font-size: 15px;
+        font-weight: 500;
+
+        @media (max-width:1000px) {
+          margin-right: 100px;
+        }
+
+        @media (max-width:900px) {
+          word-break: break-all;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+
+        @media (max-width:600px) {
+          flex: 6;
+          word-break: break-all;
+          margin-right: 0;
+          margin-left: 5px;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+
+        @media (max-width:360px) {
+          font-size: 11px;
+        }
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width:$mobileWidth) {
+          display: none;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          justify-content: flex-start;
+        }
+
+        .status {
+          background: #FE006C;
+          color: white;
+          font-size: 12px;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          @media (max-width:400px) {
+            margin-left: 5px;
+            margin-top: 0px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .references {
+      align-items: flex-start;
+      text-align: left;
+      margin-left: 30px;
+      margin-right: 300px;
+      color: #000451;
+      font-size: 15px;
+      font-weight: 500;
+      width: calc(100% - 20px);
+
+      @media (max-width:1000px) {
+        margin-right: 100px;
+      }
+
+      @media (max-width:900px) {
+        word-break: break-all;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      @media (max-width:$mobileWidth) {
+        width: 100%;
+        font-size: 13px;
+        word-break: break-all;
+        margin-right: 0;
+        margin-left: 5px;
+        display: none;
+      }
+
+      .clipboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .mobReferences {
+      align-items: flex-start;
+      text-align: left;
+      margin-left: 30px;
+      margin-right: 300px;
+      color: #000451;
+      font-size: 15px;
+      font-weight: 500;
+      display: none;
+      width: calc(100% - 20px);
+
+      @media (max-width:$mobileWidth) {
+        display: block;
+        width: 100%;
+        font-size: 13px;
+        word-break: break-all;
+        margin-right: 0;
+        margin-left: 5px;
+      }
+
+      @media (max-width: 350px) {
+        display: none;
+      }
+
+      .clipboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+
+      .txclipboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .semiMobReferences {
+      align-items: flex-start;
+      text-align: left;
+      margin-left: 30px;
+      margin-right: 300px;
+      color: #000451;
+      font-size: 15px;
+      font-weight: 500;
+      display: none;
+      width: calc(100% - 20px);
+
+      @media (max-width:350px) {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        word-break: break-all;
+        margin-right: 0;
+        margin-left: 5px;
+      }
+
+      .clipboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+
+      .txclipboard {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .action {
+          color: #FE006C;
+          margin-left: 10px;
+          cursor: pointer;
+
+          @media (max-width:600px) {
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .mobActions {
+      display: none;
+
+      @media (max-width:$mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        justify-content: flex-start;
+      }
+
+      .action {
+        color: #FE006C;
+        margin-left: 10px;
+        cursor: pointer;
+
+        @media (max-width:600px) {
+          margin-left: 0;
+          margin-right: 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+}

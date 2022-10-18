@@ -1,0 +1,234 @@
+@import 'base.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 60px;
+
+    @media(max-width: $mobileWidth) {
+        padding: 0px 16px;
+        gap: 40px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 100px;
+        width: 100%;
+
+        @media(max-width: $mobileWidth) {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .tip {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            max-width: 500px;
+
+            @media(max-width: $mobileWidth) {
+                gap: 20px;
+            }
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 10px;
+
+                .h1 {
+                    font-family: 'Raleway';
+                    font-style: normal;
+
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 39px;
+
+                    color: #000000;
+
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+
+                    @media(max-width: $mobileWidth) {
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
+                }
+
+                .h2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 24px;
+
+                    letter-spacing: 0.5px;
+                    color: #000000;
+
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+
+                    @media(max-width: $mobileWidth) {
+                        font-size: 13px;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            .content {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                /* or 162% */
+
+                text-align: left;
+                letter-spacing: 0.25px;
+
+                color: #000000;
+
+                @media(max-width: $mobileWidth) {
+                    font-size: 15px;
+                    line-height: 24px;
+
+                    text-align: justify;
+                    letter-spacing: 0.5px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .image {
+            display: flex;
+        }
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .heading {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            /* identical to box height, or 162% */
+
+            letter-spacing: 0.15px;
+
+            color: #000000;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 40px;
+
+            justify-content: space-evenly;
+
+            @media(max-width: $mobileWidth) {
+                flex-direction: column;
+                gap: 8px;
+                width: 100%;
+            }
+
+            .step {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 64px;
+                padding-bottom: 64px;
+                gap: 24px;
+                flex-grow: 1;
+                flex-basis: 0;
+
+                box-sizing: border-box;
+                opacity: 0.7;
+                box-shadow: 0px 2px 4px rgba(254, 0, 108, 0.2);
+                border-radius: 10px;
+
+                .image {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .stepName {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+
+                    letter-spacing: 0.15px;
+                    color: #000000;
+                }
+
+                .comment {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 24px;
+
+                    text-align: center;
+                    letter-spacing: 0.5px;
+
+                    color: #000000;
+
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        background: #F0F0F3;
+        padding: 30px 0px;
+
+        .header {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 39px;
+            color: #000000;
+        }
+
+        .comment {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #000000;
+        }
+
+        .emailContainer {
+            background: #FFFFFF;
+            // border: 1px solid #000000;
+            border-radius: 20px;
+            width: 600px;
+
+            @media(max-width: $mobileWidth) {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@import 'base.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 32px auto;
+
+    @media(max-width: $mobileWidth) {
+        width: 95%;
+    }
+
+    .heading {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        /* identical to box height, or 101% */
+
+        letter-spacing: 0.15px;
+
+        color: #000000;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        width: 100%;
+
+        .balanceInfo {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            @media(max-width: $mobileWidth) {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                border: 1px solid #000451;
+                border-radius: 10px;
+                flex: 1 0 auto;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+
+                background: #ffffff;
+                color: #000000;
+
+            }
+        }
+
+        .transactionList {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                .title {
+                    color: #000000;
+                }
+
+                .button {
+                    color: #FF0752;
+                }
+            }
+        }
+    }
+}

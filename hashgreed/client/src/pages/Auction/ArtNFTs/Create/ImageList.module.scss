@@ -1,0 +1,44 @@
+@import "base.scss";
+
+.ImageList {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-color: var(--chakra-colors-black);
+  justify-content: center;
+  flex-wrap: wrap;
+  .ImageItem {
+    padding: 5px;
+    height: 300px;
+    @media (max-width: 600px) {
+      height: 150px;
+    }
+    box-shadow: 0px 6.2592px 6.2592px rgba(0, 0, 0, 0.2);
+    border-radius: 5.63328px;
+    margin: 5px;
+    border: 3px solid;
+    border-color: var(--chakra-colors-gray-200);
+    flex: 0 0 200px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .btnRemove {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .Text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

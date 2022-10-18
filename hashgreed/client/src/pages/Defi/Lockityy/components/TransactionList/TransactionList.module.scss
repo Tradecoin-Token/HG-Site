@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: #F4F4F4;
+    border-radius: 12px;
+
+    .tableHeader {
+        display: flex;
+        flex-direction: row;
+
+        .header {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+
+            flex-grow: 1;
+            flex-basis: 0;
+
+            text-align: left;
+            color: #707070;
+        }
+    }
+
+    .loading {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .transactionList {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .transaction {
+            display: flex;
+            flex-direction: row;
+
+            .item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                flex-grow: 1;
+                flex-basis: 0;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+            }
+        }
+
+        .transactionMobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .col1 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+
+                .token {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .data {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 4px;
+            }
+        }
+
+    }
+
+}

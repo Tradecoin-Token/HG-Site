@@ -1,0 +1,207 @@
+@import 'base.scss';
+
+.receive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 15px;
+
+        @media (max-width: $drawOpenMaxWidth) {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+
+
+        .deposit {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+
+            .title {
+                color: #1E0E62;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: left;
+                margin-bottom: 5px;
+                margin-top: 5px;
+
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .border {
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+        }
+
+        .body {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            align-items: center;
+
+            @media (max-width: 800px) {
+                flex-direction: column;
+            }
+
+            .qrcode {
+                margin-right: 20px;
+                cursor: pointer;
+
+                @media (max-width: 600px) {
+                    margin-right: 0;
+                    display: none;
+                }
+            }
+
+            .subbody {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @media (max-width: 800px) {
+                    margin-top: 20px;
+                }
+
+                .subheader {
+                    color: #686868;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+
+                    @media (max-width: $mobileWidth) {
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .codevalue {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #262626;
+                    margin-bottom: 20px;
+                    text-align: left;
+                    word-break: break-all;
+
+                    @media (max-width: $drawOpenMaxWidth) {
+                        font-size: 25px;
+                        text-align: left;
+                    }
+
+                    @media (max-width: 600px) {
+                        font-size: 20px;
+                        text-align: justify;
+                        margin-bottom: 30px;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 16px;
+                        text-align: left;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+
+                .copy {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 600px) {
+                        flex-direction: column;
+                        display: none;
+                    }
+
+                    .copyaddress1 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-right: 50px;
+                        cursor: pointer;
+                        text-align: left;
+
+                        .facopy {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .copyaddress2 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        cursor: pointer;
+                        text-align: left;
+
+                        .fasharealt {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .mobileCopy {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 30px;
+                    display: none;
+                    align-items: center;
+
+                    @media (max-width: 600px) {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .qrcodemobile {
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+
+                    .facopy {
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+
+                    .fasharealt {
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .subcontent {
+                    font-size: 18;
+                    font-weight: 500;
+                    color: rgba(21, 20, 57, 0.4);
+                    text-align: justify;
+
+                    @media (max-width: $mobileWidth) {
+                        font-size: 12px;
+                    }
+
+                    .explorer {
+                        cursor: pointer;
+                        color: #1E0E62;
+                    }
+                }
+            }
+        }
+    }
+
+    .transactionList {
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw - 20px);
+        max-width: 1200px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

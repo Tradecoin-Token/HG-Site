@@ -1,0 +1,121 @@
+@import 'base.scss';
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  @media (max-width: $drawOpenMaxWidth) {
+    display: none;
+  }
+
+  .certificationContent {
+    width: 350px;
+  }
+
+  .menuitem {
+    background: #000451;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 16px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  .activeitem {
+    background: #FE006C;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .submenu {
+    padding: 15px 56px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    backdrop-filter: blur(5px);
+
+    .subitem {
+      padding: 10px 15px;
+      text-align: left;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+
+      &:not(:first-child) {
+        border-top: 1px solid #FFFFFF55;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #FFFFFF55;
+      }
+
+      .subcomment {
+        width: 90px;
+        height: 26px;
+        background-color: #FE006C;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 10px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .auctionContent {
+      width: 250px;
+      backdrop-filter: blur(5px);
+      margin-left: 60px;
+    }
+
+    .nftsubmenu {
+      padding: 15px 56px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      .subitem {
+        padding: 10px 15px;
+        text-align: left;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+
+        &:not(:first-child) {
+          border-top: 1px solid #FFFFFF55;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #FFFFFF55;
+        }
+
+        .subcomment {
+          width: 90px;
+          height: 26px;
+          background-color: #FE006C;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+          padding: 5px;
+          padding-bottom: 10px;
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+}
