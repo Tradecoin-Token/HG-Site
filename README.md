@@ -29,6 +29,9 @@ module.exports = {
 
 ## Quick Start
 
+nvm install 14.15.0
+nvm use 14.15.0
+
 ```javascript
 // Install dependencies for server & client
 npm install && npm run client-install
